@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Happy Birthday Aeswarya </title>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js" integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ==" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="init()">
+    <div class="cont">
+    
+    <div class="top-img"></div>
+        
+        <header>
+            <h2 class="vert-move">😊Happy Birthday Aeswarya❤️</h2>
+        </header>
+        <div class="topii"></div>
+        <h3>💕<strong id="hio">Happy Birthday</strong> to You💕</br>
+            You're my best perfect women,none in just love or care but also in my all events of lifestyle </br>
+            Who Deserves a Special Day</br> For being you are and</br> Bringing joy in everyway.👫</br>
+            You make me Smile and Laugh with everything You do I get to send a</br>
+            Special Birthday Wish to You😊</br>
+            <strong>❤️ Aeswarya ❤️</strong></h3>
+            <h5>Happy Birthday Aeswarya</h5>
+            <button class="b2" onclick="next()">NEXT</button>
+            </div>
+                 <div class="second_page">❤️❤️
+                 <div class="top-hbd"></div>
+                 <p class="wishes">I'm wishing You My</br> ❤️❤️<span style="color:tomato;">❤️"77696665"❤️</span>🌹</br>
+            You're the One , I can</br> share my all moment 😃</br>
+            May God give You The all</br> <span style="color:#ff9f43;">Happiness 😊</span></br> that you want and </br>Desire✨💕</br>
+            You tolerate my mood swings😃</br>pull me up when I'm down.</br> You are my ultimate source of</br>inspiration and happiness😘.</br>Never be Sad because </br>🤗Tere Shiba koi nehi✨ </br>💕Mere  inha🥺🥺</br>❤️❤️I am always with you at any moment💕</br>❣️Always Smile my compiler❣️😃 </br>A Special happy Birthday to</br> My Dear Cutest debugger❣️😃</br>I just want to say that</br> 🤗******🤗</br>❣️Love You My Compiler❣️
+             </p>
+             <div class="phirse"></div>
+                 <h4>Scroll Down</h4>
+                    <button class="b1" onclick="prev()">back</button>
+                 </div>
+            <main id="main"></main>
+            
+            <main id="load"></main>
+
+<script>
+function init(){
+    var sound = new Howl({
+  src: ['birthday.mp3'],
+  loop: true,
+  volume: 1,
+  onplay: ()=>{
+      //document.getElementById("load").style.display="none";
+  }
+});
+
+    setTimeout(()=>{
+    document.getElementById("main").style.display = "none";
+    document.getElementById("load").style.display = "none";
+     var audio = document.getElementById("Play");
+    sound.play();
+    Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Wishing a very Happy Birthday Aeswarya✨🎉🌹💕 generous😊,kind, amazing😉.'
+});
+},6000);
+}
+</script>
+    </body>
+</html>
